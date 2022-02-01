@@ -1,5 +1,12 @@
 .projects {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__left {
     display: flex;
@@ -9,21 +16,28 @@
   &__right {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
-    @media only screen and (max-width: 1155px) {
-      justify-content: flex-end;
-      align-content: flex-end;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
     }
   }
 
   &__item {
     max-width: 350px;
     border-radius: 8px;
-    // box-shadow: 0 2px 15px rgba(black, 0.15);
     overflow: hidden;
     transition: all 0.3s;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      max-width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
 
     &:hover {
       transform: scale(1.03);
@@ -38,8 +52,20 @@
     padding: 0 0;
   }
 
+  &__text {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
   &__thumbnail {
     width: 100%;
     transform: translateY(-2px);
+  }
+
+  &__github-link {
+    &:link,
+    &:visited {
+      color: black;
+    }
   }
 }
