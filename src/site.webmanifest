@@ -1,0 +1,22 @@
+{
+  "short_name": "Joel Adving",
+  "name": "Joel Adving",
+  "description": "Web developer portfolio",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#0F1922",
+  "theme_color": "#6A19FF",
+  "lang": "en"
+}

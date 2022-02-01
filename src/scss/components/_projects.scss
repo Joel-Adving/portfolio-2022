@@ -1,0 +1,45 @@
+.projects {
+  display: flex;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 1155px) {
+      justify-content: flex-end;
+      align-content: flex-end;
+    }
+  }
+
+  &__item {
+    max-width: 350px;
+    border-radius: 8px;
+    // box-shadow: 0 2px 15px rgba(black, 0.15);
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__info {
+    padding: 0 0;
+  }
+
+  &__thumbnail {
+    width: 100%;
+    transform: translateY(-2px);
+  }
+}

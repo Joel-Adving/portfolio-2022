@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    JOEL ADVING -- Owner | Fullstack
+
+# TECHNOLOGY COLOPHON
+
+    SCSS, HTML5
+    Apache Server Configs, Fullpage.js, Normalize.css

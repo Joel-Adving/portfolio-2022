@@ -1,0 +1,17 @@
+//  ========================================
+//  Typewriter/Typing Text component styling
+//  ========================================
+
+.typewriter {
+  display: block;
+}
+
+.typewriter__container {
+  display: inline-block;
+}
+
+.typewriter__text {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+}

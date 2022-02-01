@@ -1,0 +1,36 @@
+{
+  "name": "joel-adving",
+  "version": "1.0.0",
+  "description": "Web Developer Portfolio",
+  "author": "Joel Adving",
+  "source": "src/index.html",
+  "staticFiles": {
+    "staticPath": [
+      "/.htaccess",
+      "404.html",
+      "src/browserconfig.xml",
+      "src/humans.txt",
+      "src/robots.txt",
+      "src/site.webmanifest",
+      "/tile.png",
+      "src/tile-wide.png",
+      "/src/handle_contact-form.php"
+    ]
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "latest",
+    "@parcel/transformer-sass": "latest",
+    "@parcel/transformer-webmanifest": "latest",
+    "parcel-bundler": "latest",
+    "parcel-plugin-static-files-copy": "latest",
+    "sass": "latest"
+  },
+  "dependencies": {
+    "fullpage.js": "latest",
+    "parcel": "latest"
+  }
+}
