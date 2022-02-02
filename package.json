@@ -22,15 +22,14 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "latest",
-    "@parcel/transformer-sass": "latest",
-    "@parcel/transformer-webmanifest": "latest",
-    "parcel-bundler": "latest",
-    "parcel-plugin-static-files-copy": "latest",
-    "sass": "latest"
+    "@parcel/packager-raw-url": "^2.2.1",
+    "@parcel/transformer-sass": "^2.2.1",
+    "@parcel/transformer-webmanifest": "^2.2.1",
+    "parcel": "^2.2.1",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "sass": "^1.49.7"
   },
   "dependencies": {
-    "fullpage.js": "latest",
-    "parcel": "latest"
+    "fullpage.js": "^3.1.2"
   }
 }

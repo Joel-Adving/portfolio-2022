@@ -42,6 +42,7 @@
         integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
         referrerpolicy="no-referrer" rel="stylesheet">
     <link href="scss/main.scss" rel="stylesheet">
+    <script type="module" defer src="js/index.js"></script>
 </head>
 
 <body>
@@ -145,7 +146,7 @@
                             <div class="projects__info">
                                 <p
                                     class="projects__text paragraph paragraph--is-dark paragraph--is-somewhat-translucent paragraph--is-not-spaced">
-                                    Pure Javascript, MVC Architecture, Sass</p>
+                                    Javascript, MVC Architecture, Sass</p>
                                 <a class="projects__github-link"
                                     href="https://github.com/Joel-Adving/forkify">GitHub</a>
                             </div>
@@ -158,7 +159,7 @@
                             <div class="projects__info">
                                 <p
                                     class="projects__text paragraph paragraph--is-dark paragraph--is-somewhat-translucent paragraph--is-not-spaced">
-                                    Pure Javscript, OOP</p>
+                                    Javscript, no framework, Object oriented</p>
                                 <a class="projects__github-link" href="https://github.com/Joel-Adving/maptly">GitHub</a>
                             </div>
                         </div>
@@ -191,8 +192,9 @@
                                 class="headline headline--is-small headline--is-light headline--is-somewhat-translucent">
                                 I'll be in touch with you</h3>
                         </div>
-
-                        <form class="contact-form" id="contact-form">
+                        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+                        <form class="contact-form" id="contact-form" target="dummyframe"
+                            action="https://formspree.io/f/xknyjznl" method="POST">
                             <label class="contact-form__label" for="name">Name</label>
                             <input class="contact-form__input-field" id="name" name="name"
                                 oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Name is empty')"
@@ -200,8 +202,8 @@
                             <p class="contact-form__output-field"><i class="fas fa-check"></i> Name is valid</p>
                             <p class="contact-form__output-field"><i class="fas fa-exclamation-triangle"></i> Name is
                                 empty</p>
-                            <label class="contact-form__label" for="email">Email</label>
-                            <input class="contact-form__input-field" id="email" name="email"
+                            <label class="contact-form__label" for="_replyto">Email</label>
+                            <input class="contact-form__input-field" id="email" name="_replyto"
                                 oninput="this.setCustomValidity('')"
                                 oninvalid="this.setCustomValidity('Email is empty or invalid')" required type="email">
                             <p class="contact-form__output-field"><i class="fas fa-check"></i> Email is valid</p>
@@ -232,9 +234,7 @@
         integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
         referrerpolicy="no-referrer"
         src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/home.js"></script>
+
 </body>
 
 </html>
