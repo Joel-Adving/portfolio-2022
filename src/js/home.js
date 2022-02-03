@@ -52,9 +52,6 @@ const form = document.getElementById("contact-form");
 form.addEventListener("submit", handleFormSubmit);
 
 function handleFormSubmit(e) {
-  setTimeout(() => {
-    document.getElementById("contact-form").reset();
-    document.getElementById("contact-form").style.display = "none";
-    document.getElementById("contact-form-success").style.display = "block";
-  }, 500);
+  document.getElementById("contact-form").style.display = "none";
+  document.getElementById("contact-form-success").style.display = "block";
 }
