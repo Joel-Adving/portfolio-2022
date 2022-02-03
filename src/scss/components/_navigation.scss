@@ -3,7 +3,7 @@
 //  ============================
 
 //  Imports mixins for responsiveness
-@use '../abstracts/mixins' as mixins;
+@use "../abstracts/mixins" as mixins;
 
 .navigation {
   position: fixed;
@@ -16,8 +16,11 @@
   background: none;
   transition: background 0.85s ease-in-out;
 
-  @include mixins.responsive-down('medium') {
-    background: rgba(var(--rgb-dark-not-black), var(--opacity-not-much-transparency));
+  @include mixins.responsive-down("medium") {
+    background: rgba(
+      var(--rgb-dark-not-black),
+      var(--opacity-not-much-transparency)
+    );
   }
 }
 
@@ -30,6 +33,10 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   margin: 0;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1rem;
+  }
 }
 
 .navigation__brand {
@@ -44,12 +51,16 @@
   b {
     font-weight: 700;
   }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1rem;
+  }
 }
 
 .navigation__content {
   float: right;
 
-  @include mixins.responsive-down('small') {
+  @include mixins.responsive-down("small") {
     display: none;
     flex-direction: column;
     float: none;
@@ -63,7 +74,7 @@
   padding: 0;
   vertical-align: top;
 
-  @include mixins.responsive-down('small') {
+  @include mixins.responsive-down("small") {
     display: block;
     padding-top: 2em;
   }
@@ -81,7 +92,7 @@
 .navigation__socials {
   display: inline-block;
 
-  @include mixins.responsive-down('small') {
+  @include mixins.responsive-down("small") {
     display: block;
     padding-top: 2em;
   }
@@ -101,7 +112,10 @@
   cursor: pointer;
   display: none !important; //  Otherwise Fontawesome is going to overwrite the property
 
-  @include mixins.responsive-down('small') {
+  @include mixins.responsive-down("small") {
     display: inline-block !important; //  Otherwise Fontawesome is going to overwrite the property
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 1.4rem;
   }
 }
